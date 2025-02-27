@@ -2,8 +2,8 @@
 
 # A MacOS script to replace Submarine in Sub Editor with the one in the current campaign. Does not backup old submarine.
 #
-# 2. Decompresses save file
-# 3. Replaces submarine in Sub Editor
+# 1. Decompresses save file
+# 2. Replaces submarine in Sub Editor
 #
 # Preconditions: 
 # - Install https://github.com/Jlobblet/Barotrauma-Save-Decompressor/blob/main/Barotrauma-Save-Decompressor-CLI/Program.cs
