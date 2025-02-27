@@ -22,7 +22,7 @@
 CAMP_NAME="Klim"
 
 # Full path to submarine
-SUB_PATH="/Users/`whoami`/Library/Application Support/Daedalic Entertainment GmbH/Barotrauma/WorkshopMods/Installed/3431434030/Kishka2.sub"
+SUB_PATH="/Users/efim/Library/Application Support/Steam/steamapps/common/Barotrauma/Barotrauma.app/Contents/MacOS/LocalMods/Kishka2/Kishka2.sub"
 
 # Root directory for game backups
 BACKUP_ROOT="/Users/`whoami`/Backup/Barotrauma"
