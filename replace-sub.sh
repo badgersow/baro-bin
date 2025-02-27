@@ -21,8 +21,8 @@
 # Campaign name
 CAMP_NAME="Klim"
 
-# Full path to submarine
-SUB_PATH="/Users/efim/Library/Application Support/Steam/steamapps/common/Barotrauma/Barotrauma.app/Contents/MacOS/LocalMods/Kishka2/Kishka2.sub"
+# Submarine name
+SUB_NAME="Kishka2"
 
 # Root directory for game backups
 BACKUP_ROOT="/Users/`whoami`/Backup/Barotrauma"
@@ -32,6 +32,8 @@ COMPRESS_CLI="/Users/`whoami`/workspace/Barotrauma-Save-Decompressor/Barotrauma-
 
 ############## End edit section
 
+
+SUB_PATH="/Users/`whoami`/Library/Application Support/Steam/steamapps/common/Barotrauma/Barotrauma.app/Contents/MacOS/LocalMods/Kishka2/Kishka2.sub"
 SAVE_NAME="${CAMP_NAME}.save"
 SAVE_DIR_NAME="${CAMP_NAME}"
 SAVE_DIR="/Users/`whoami`/Library/Application Support/Daedalic Entertainment GmbH/Barotrauma/Multiplayer"
@@ -51,7 +53,7 @@ echo "Copy save into temporary workspace..."
 mkdir -p "${WORKSPACE}"
 cp "${SAVE_PATH}" "${WORKSPACE}"
 
-echo "Decompress the and remove the save in workspace..."
+echo "Decompress the save and remove it from workspace..."
 cd "${WORKSPACE}"
 dotnet run --project "${COMPRESS_CLI}" decompress "${WORKSPACE}/${SAVE_NAME}"
 rm "${WORKSPACE}/${SAVE_NAME}"
